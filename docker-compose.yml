@@ -31,7 +31,7 @@ services:
       retries: 3
       start_period: 20s
       timeout: 5s
-    env_file: .env
+    env_file: stack.env
     depends_on:
       db:
         condition: service_healthy
